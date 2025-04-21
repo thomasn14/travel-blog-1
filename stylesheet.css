@@ -13,49 +13,9 @@
     --preformatted: #ccc;
     --disabled: #111;
 
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  display: flex;
-  background-color: #144511;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-/* Change the color of links on hover */
-.topnav a:hover, 
-.topnav a:focus{
-  color: rgb(27, 159, 66);
-  text-decoration: underline;
-}
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #04AA6D;
-}
-
-a:focus, button: focus {
-    outline: 2px solid  rgb(27, 159, 66)
-}
+  }
 
 
-
-header {
-    --bg: #144511;
-    --text: white;
-    font-family: "Slackey", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-
-  
-}
 
 main {
     --bg: #144511;
@@ -65,6 +25,73 @@ main {
     font-style: bold;
     text-align: center;
     text-decoration: none;
+}
+
+
+/* Header Styles */
+
+.page-links {
+  display: none;
+}
+
+.topnav {
+  overflow: hidden;
+ 
+}
+
+.topnav.responsive .page-links {
+  background: #02175b;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 52px;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  /* height: 100vh; */
+  justify-content: flex-start;
+}
+
+.topnav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.5s ease;
+}
+
+.topnav a:hover,
+.topnav a:focus {
+  color: #FFC300;
+  text-decoration: underline;
+}
+
+.topnav a:focus {
+  outline: 3px solid #FFC300;
+}
+
+.topnav a.active {
+  background-color: #aa04aa84;
+}
+
+
+header {
+  font-family: "Slackey", sans-serif;
+  background: var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  width: 94vw;
+  justify-content: space-between;
 }
 
 
@@ -144,7 +171,22 @@ main {
 /* text boxes on Places Page*/
 
 /* media queries */
-@media (min-width: px){
 
+@media (min-width: 480px) {
+  .topnav .icon {
+      display: none;
+  }
 
+  .page-links {
+      display: none;
+      background: transparent;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: auto;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 0;
+      justify-content: flex-start;
+  }
 }
