@@ -1,0 +1,150 @@
+
+:root,
+  ::backdrop {
+    color-scheme: dark;
+    --bg:  #144511;
+    --accent-bg: #144511;
+    --text: white;
+    --text-light: #ababab;
+    --accent: #ffb300;
+    --accent-hover: #ffe099;
+    --accent-text: var(--bg);
+    --code: #f06292;
+    --preformatted: #ccc;
+    --disabled: #111;
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: flex;
+  background-color: #144511;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover, 
+.topnav a:focus{
+  color: rgb(27, 159, 66);
+  text-decoration: underline;
+}
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+}
+
+a:focus, button: focus {
+    outline: 2px solid  rgb(27, 159, 66)
+}
+
+
+
+header {
+    --bg: #144511;
+    --text: white;
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
+  
+}
+
+main {
+    --bg: #144511;
+    --text: white;
+    font-family: "Rosario", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* Home Page text on image */
+
+/* Container holding the image and the text */
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    /* Bottom left text */
+    .bottom-left {
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+    }
+
+    /* Top left text */
+    .top-left {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+    }
+
+    /* Top right text */
+    .top-right {
+      position: absolute;
+      top: 8px;
+      right: 16px;
+    }
+
+    /* Bottom right text */
+    .bottom-right {
+      position: absolute;
+      bottom: 8px;
+      right: 16px;
+    }
+
+    /* Centered text */
+    .centered {
+      position: absolute;
+      top:  50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+/* home page text on image */
+
+
+/* text boxes on Places Page*/
+
+    /* Style the button and place it in the middle of the container/image */
+    #my-image {
+      /* CSS styles go here */
+   }  
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #fffefe;
+  color: rgb(5, 59, 16);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  color: #010101;;
+  text-decoration: underline;
+}
+
+/* text boxes on Places Page*/
+
+/* media queries */
+@media (min-width: px){
+
+
+}
