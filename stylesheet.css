@@ -97,7 +97,7 @@ header nav {
 
 /* Home Page text on image */
 
-/* Container holding the image and the text */
+/* Container holding image and text */
     .container {
       position: relative;
       text-align: center;
@@ -144,9 +144,9 @@ header nav {
 
 /* text boxes on Places Page*/
 
-    /* Style the button and place it in the middle of the container/image */
+  
     #my-image {
-      /* CSS styles go here */
+      
    }  
 .container .btn {
   position: absolute;
