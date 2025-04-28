@@ -11,7 +11,7 @@
     --accent-text: var(--bg);
     --code: #f06292;
     --preformatted: #ccc;
-    --disabled: #111;
+    --disabled: #144511;
 
   }
 
@@ -26,7 +26,9 @@ main {
     text-align: center;
     text-decoration: none;
 }
-
+body margin {
+  : #144511;
+}
 
 /* Header Styles */
 
