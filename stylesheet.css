@@ -16,7 +16,7 @@
   }
 
 
-
+/* Main prperties */
 main {
     --bg: #144511;
     --text: white;
@@ -26,8 +26,25 @@ main {
     text-align: center;
     text-decoration: none;
 }
-body margin {
-  : #144511;
+main {
+  background-color: #144511;
+}
+
+/* body background color */
+body {
+  background-color: #144511;
+}
+}
+
+/* button */
+.btn {
+  --text: white;
+  font-family: "Rosario", sans-serif;
+  font-weight: 800;
+  font-style: var(--text-light);
+  text-align: center;
+  text-decoration: none;
+}
 }
 
 /* Header Styles */
@@ -99,6 +116,17 @@ header nav {
 
 /* Home Page text on image */
 
+/* Image Restraints Home Page */
+.container{
+  max-height: 70vh;
+}
+
+/* color of text home */
+  .centered {
+    color: white 
+  }
+
+
 /* Container holding image and text */
     .container {
       position: relative;
@@ -150,6 +178,7 @@ header nav {
     #my-image {
       
    }  
+  
 .container .btn {
   position: absolute;
   top: 50%;
@@ -166,14 +195,63 @@ header nav {
 }
 
 .container .btn:hover {
-  color: #010101;;
+  color: #010101;
   text-decoration: underline;
 }
+
+
+/* Footer*/
+footer {
+  --bg: #144511;
+  --text: white;
+  font-family: "Rosario", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+}
+footer {
+  background-color: #144511;
+}
+  
+}
+
+
+
+
 
 /* text boxes on Places Page*/
 
 /* media queries */
 
+/* Adding break points */
+@media only screen and (max-width: 480px) {
+  .container {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 6;}
+  .item3 {grid-area: 3 / span 6;}
+  .item4 {grid-area: 4 / span 6;}
+  .item5 {grid-area: 5 / span 6;}
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 3 / span 6;}
+  .item5 {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 2000px) {
+  .container {grid-area: 1 / span 6;}
+  .item2 {grid-area: 2 / span 1;}
+  .item3 {grid-area: 2 / span 4;}
+  .item4 {grid-area: 2 / span 1;}
+  .item5 {grid-area: 3 / span 6;}
+}
+
+
+
+/*min width for large nav  */
 @media (min-width: 480px) {
   .topnav .icon {
       display: none;
