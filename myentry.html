@@ -26,34 +26,99 @@
 <body>
     <header>
         <h1>Travel Blog</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="places.html">New Places</a>
-            <a href="entry.html">New Entry</a>
-            <a href="myentry.html">My Entries</a>
-        </nav>
+            <nav class="topnav" id="myTopnav">
+                <a href="index.html" class="active" id="logo"> <img src="HomeLogo-01.svg" alt="home"></a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="page-links">
+                    <a href="places.html">New Places</a>
+                    <a href="entry.html">New Entry</a>
+                    <a href="myentry.html">My Entries</a>
+                </div>
+
+            </nav>
     </header>
     <main>
 
         <h3>Past Trips</h3>
         <div class="container">
             <img src="ash dad sky square.jpg" alt=" " style="width:85%;" style="height:85%;" />
-            <button class="btn">Innsbruck, Austria</button>
         </div>
+        <div>
+           <h3>Wind River Range, Wyoming    2023</h3> 
+           <div> 
+            <h5>What was your day like today?</h5>
+                <label for="fname"></label>
+                <input type="text" id="fname" name="fname">
+
+        </div>
+
+        <div> 
+            <h5>Favorite activity of the day?</h5>
+                <label for="fname"></label>
+                <input type="text" id="fname" name="fname">
+        </div>
+
+        <div>
+            <h5>Resturant Recommendations?</h5>
+                <label for="fname"></label>
+                <input type="text" id="fname" name="fname"> 
+        </div>
+
+
+        </div>
+
+
 
         <div class="container">
             <img src="mountains square.jpg" alt="  " style="width:85%;" style="height:85%;" />
-            <button class="btn">Osaka, Japan</button>
+       </div>
+        <div>
+            <h3>Adirondacks, NY  2023</h3> 
+
+
+            <div> 
+             <h5>What was your day like today?</h5>
+                 <label for="fname"></label>
+                 <input type="text" id="fname" name="fname">
+ 
+         </div>
+ 
+         <div> 
+             <h5>Favorite activity of the day?</h5>
+                 <label for="fname"></label>
+                 <input type="text" id="fname" name="fname">
+         </div>
+ 
+         <div class="margin-adjust">
+             <h5>Resturant Recommendations?</h5>
+                 <label for="fname"></label>
+                 <input type="text" id="fname" name="fname"> 
+         </div>
+ 
+ 
+        <div class="margin-adjust>
+            <!-- Space holder -->
         </div>
+
+
+ 
     </main>
+
+
+
     <footer>
         <footer class="site-footer">
             <div class="footer-buttons">
-                <button class="button-primary">Learn More</button>
-                <button class="button-secondary">Contact Us</button>
+                <button class="button-primary">Home</button>
+                <button class="button-primary">New Places</button>
+                <button class="button-secondary">New Entry</button>
+                <button class="button-secondary">Past Trips</button>
             </div>
         </footer>
     </footer>
+
 
 </body>
 
