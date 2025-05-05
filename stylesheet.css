@@ -34,7 +34,7 @@ main {
 body {
   background-color: #144511;
 }
-}
+
 
 /* button */
 .btn {
@@ -45,7 +45,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-}
+
 
 /* Header Styles */
 
@@ -121,10 +121,17 @@ header nav {
   max-height: 70vh;
 }
 
+.container img {
+  max-width: 518px;
+}
+
 /* color of text home */
   .centered {
     color: white 
   }
+
+
+ 
 
 
 /* Container holding image and text */
@@ -132,6 +139,8 @@ header nav {
       position: relative;
       text-align: center;
       color: white;
+      max-width: 75vw;
+      align-content: center;
     }
 
     /* Bottom left text */
@@ -168,8 +177,17 @@ header nav {
       top:  50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      font-size: clamp(24px, 10vw, 100px);
     }
+
+
 /* home page text on image */
+
+.flex-center {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 /* text boxes on Places Page*/
@@ -208,6 +226,8 @@ header nav {
 
 
 
+
+
 /* Footer*/
 footer {
   --bg: #144511;
@@ -221,8 +241,6 @@ footer {
 footer {
   background-color: #144511;
 }
-  
-}
 
 
 
@@ -231,32 +249,6 @@ footer {
 /* text boxes on Places Page*/
 
 /* media queries */
-
-/* Adding break points */
-@media only screen and (max-width: 480px) {
-  .container {grid-area: 1 / span 6;}
-  .item2 {grid-area: 2 / span 6;}
-  .item3 {grid-area: 3 / span 6;}
-  .item4 {grid-area: 4 / span 6;}
-  .item5 {grid-area: 5 / span 6;}
-}
-
-@media only screen and (min-width: 1000px) {
-  .container {grid-area: 1 / span 6;}
-  .item2 {grid-area: 2 / span 1;}
-  .item3 {grid-area: 2 / span 4;}
-  .item4 {grid-area: 3 / span 6;}
-  .item5 {grid-area: 4 / span 6;}
-}
-
-@media only screen and (min-width: 2000px) {
-  .container {grid-area: 1 / span 6;}
-  .item2 {grid-area: 2 / span 1;}
-  .item3 {grid-area: 2 / span 4;}
-  .item4 {grid-area: 2 / span 1;}
-  .item5 {grid-area: 3 / span 6;}
-}
-
 
 
 /*min width for large nav  */
