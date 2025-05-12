@@ -242,6 +242,20 @@ header nav {
   margin-adjust {
     margin-bottom: 60px;
 
+
+
+/* New Entry  */
+
+
+
+/* camera centered */
+}
+.camera {
+  padding-top: 20px;
+  align-items: center;
+}
+.camera:hover{
+   transform: scale(1.15);
 }
 
 
@@ -278,8 +292,13 @@ div.footer-buttons:hover {
 img {
   max-width: 100px;
 
+}
+a.footerlogo img:hover {
+   transform: scale(1.15);
 
 }
+
+
 
 /* text boxes on Places Page*/
 
