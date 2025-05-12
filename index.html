@@ -23,11 +23,11 @@
 
 <body>
     <header>
-        <h1>Travel Blog</h1>
+        <a class="h1" href="index.html">Travel Blog</a>
 
             <nav class="topnav" id="myTopnav">
-                <a href="index.html" class="active" id="logo"> <img src="HomeLogo-01.svg" alt="home"></a>
-                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"></a>
+                <a href="index.html" class="active" id="logo"> <img src="Logo1.jpg" style="flex-wrap;max-width: 150px" alt="home"></a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
                 <div class="page-links">
                     <a href="places.html">New Places</a>
                     <a href="entry.html">New Entry</a>
@@ -47,10 +47,11 @@
 
         <section class="flex-center">
             <div class="container">
+                <a href="places.html">
                 <img src="Places Cover.jpg" alt=" " style="width:75%;" />
                 <!-- <img src="Plane.jpg" alt=" "/> alt text is blank bc img is decorative -->
                 <div class="centered">Find New Places</div>
-
+                </a>
 
 
 
@@ -67,7 +68,7 @@
 
 
             <div class="container">
-                <img src="sky fishing square.jpg" alt=" " style="width: 75%;" />
+                <img src="fishingSquare.jpg" alt=" " style="width: 75%;" />
                 <!-- <img src="Plane.jpg" alt=" "/> alt text is blank bc img is decorative -->
                 <div class="centered">See Past Adventures</div>
             </div>
@@ -79,13 +80,38 @@
 
     </main>
 
-    <footer>
-        <footer class="site-footer">
+    <footer class="footer">
+
+    
+                
+              
             <div class="footer-buttons">
-                <button class="button-primary">Home</button>
-                <button class="button-primary">New Places</button>
-                <button class="button-secondary">New Entry</button>
-                <button class="button-secondary">Past Trips</button>
+                <div>
+                    <img src="Logo1.jpg"
+                </div>
+
+                <div>
+                    <a href="index.html">
+                    <button class="button-primary">Home</button>
+                </div>
+
+                 <div>
+                    <a href="places.html">
+                    <button class="button-primary">New Places</button>
+                </div>
+
+                <div>
+                    <a href="entry.html">
+                   <button class="button-secondary">New Entry</button>
+                </div>
+ 
+                <div>
+                    <a href="myentry.html">
+                    <button class="button-secondary">Past Trips</button>
+                </div>
+            
+                
+            
             </div>
         </footer>
     </footer>
