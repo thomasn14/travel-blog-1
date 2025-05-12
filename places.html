@@ -24,18 +24,20 @@
 
 <body>
     <header>
-        <h1>Travel Blog</h1>
+
+             <a class="h1" href="index.html">Travel Blog</a>
+
             <nav class="topnav" id="myTopnav">
-                <a href="index.html" class="active" id="logo"> <img src="HomeLogo-01.svg" alt="home"></a>
-                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
+                <a href="index.html" class="active" id="logo"> <img src="Logo1.jpg" style="flex-wrap:max-width; 150px" alt="home"></a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
                 <div class="page-links">
                     <a href="places.html">New Places</a>
                     <a href="entry.html">New Entry</a>
                     <a href="myentry.html">My Entries</a>
+                    <i class="fa fa-bars"></i>
                 </div>
 
+            </nav>
         </nav>
     </header>
     <main class="flex-center">
@@ -59,13 +61,34 @@
         </div>
     </main>
 
-    <footer>
-        <footer class="site-footer">
+     <footer class="footer">
+
+    
+                
+              
             <div class="footer-buttons">
-                <button class="button-primary">Home</button>
-                <button class="button-primary">New Places</button>
-                <button class="button-secondary">New Entry</button>
-                <button class="button-secondary">Past Trips</button>
+                <div>
+                    <a class="footerlogo" href="index.html"> <img src="Logo1.jpg"></a>
+                   
+                <div/> 
+       
+                 <div>
+                    <a href="places.html">
+                    <button class="button-primary">New Places</button>
+                </div>
+
+                <div>
+                    <a href="entry.html">
+                   <button class="button-secondary">New Entry</button>
+                </div>
+ 
+                <div>
+                    <a href="myentry.html">
+                    <button class="button-secondary">Past Trips</button>
+                </div>
+            
+                
+            
             </div>
         </footer>
     </footer>
