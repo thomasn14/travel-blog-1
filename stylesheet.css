@@ -14,7 +14,25 @@
     --disabled: #144511;
 
   }
+/* h1 properties */
+a.h1 {
+  font-size: xx-large;
+  text-align: left;
+  color: white;
+  
+}
+a.h1:hover {
+  color:#ffb300;
+  transform: scale(1.15);
+}
 
+
+.active logo {
+      max-width: 200px;
+}
+.active img:hover {
+   transform: scale(1.1);
+}
 
 /* Main prperties */
 main {
@@ -171,15 +189,20 @@ header nav {
       right: 16px;
     }
 
-    /* Centered text */
-    .centered {
+    /* Centered homw page text */
+   
+    .centered{
       position: absolute;
       top:  50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: clamp(24px, 10vw, 100px);
+      font-size: clamp(24px, 10vw, 75px);
+      color:#203911
     }
-
+    .centered:hover {
+      color: #353534;
+      text-decoration: underline;
+    }
 
 /* home page text on image */
 
@@ -193,9 +216,7 @@ header nav {
 /* text boxes on Places Page*/
 
   
-    #my-image {
-      
-   }  
+ 
   
 .container .btn {
   position: absolute;
@@ -213,7 +234,7 @@ header nav {
 }
 
 .container .btn:hover {
-  color: #010101;
+  color: #232222;
   text-decoration: underline;
 }
 
@@ -228,23 +249,32 @@ header nav {
 
 
 
+
 /* Footer*/
+
 footer {
   --bg: #144511;
   --text: white;
   font-family: "Rosario", sans-serif;
   font-weight: 800;
   font-style: normal;
-  text-align: center;
-  text-decoration: none;
 }
 footer {
   background-color: #144511;
 }
+div.footer-buttons{
+text-align: right;
+}
+div.footer-buttons:hover {
+  color:#FFC300
+
+}
+/* footer logo */
+img {
+  max-width: 100px;
 
 
-
-
+}
 
 /* text boxes on Places Page*/
 
