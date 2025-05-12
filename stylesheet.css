@@ -252,18 +252,23 @@ header nav {
 
 /* Footer*/
 
+
 footer {
   --bg: #144511;
   --text: white;
   font-family: "Rosario", sans-serif;
   font-weight: 800;
   font-style: normal;
+  align-items: center;
 }
 footer {
   background-color: #144511;
 }
 div.footer-buttons{
-text-align: right;
+text-align: center;
+}
+div {
+  padding: 5px;
 }
 div.footer-buttons:hover {
   color:#FFC300
@@ -282,7 +287,7 @@ img {
 
 
 /*min width for large nav  */
-@media (min-width: 480px) {
+@media (min-width: 580px) {
   .topnav .icon {
       display: none;
   }
